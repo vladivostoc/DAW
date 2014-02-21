@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script>
+        function timedRefresh(timeoutPeriod)
+        {
+            setTimeout("location.reload(true);", timeoutPeriod);
+
+        }
+
+
+    </script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body onload="javascript:timedRefresh(1000);">
+    <div>
+       <!--<b>Hola ITGAM!!</b>(Msg desde el View)-->
+          <b>@ViewBag.Dias</b>   (MENSAJE vladi)
+        <p>
+        <b>@ViewBag.Horas:@ViewBag.Minutos:@ViewBag.Segundos</b>
+        
+    </div>
+</body>
+</html>
